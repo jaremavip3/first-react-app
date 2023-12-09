@@ -1,0 +1,43 @@
+.body {
+  background-color: papayawhip;
+  height: 100px;
+}
+
+.my-button-container {
+  margin-right: 15px;
+  float: right;
+  margin-top: 15px;
+}
+.profile-picture {
+  float: left;
+  margin: 15px;
+  margin-top: -10px;
+  margin-left: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid black;
+}
+
+.my-button {
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.my-button:hover {
+  color: #fff;
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
