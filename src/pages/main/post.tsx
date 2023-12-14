@@ -11,6 +11,7 @@ import { auth, db } from "../../config/firebase"
 import { Post as iPost } from "./main"
 import { useAuthState } from "react-firebase-hooks/auth"
 import { useEffect, useState } from "react"
+import "../../pages-style/post.css"
 
 interface Props {
   post: iPost
@@ -79,7 +80,7 @@ export const Post = (props: Props) => {
     getLikes()
   }, [])
   return (
-    <div>
+    <div className="whole-post">
       <div className="post-title">
         <h1>{post.title}</h1>
       </div>

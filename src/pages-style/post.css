@@ -1,0 +1,41 @@
+.whole-post {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 2px solid rgb(13, 247, 255);
+
+  border-radius: 40px;
+  background: rgb(212, 244, 255);
+  position: relative;
+  transform: translate(0);
+  transform-style: preserve-3d;
+}
+.whole-post::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  transform: translate3d(10px, 8px, -1px);
+  z-index: -1;
+  /* prettier-ignore */
+  background: conic-gradient(
+    from 90deg at 40% -25%,#ffd700,#f79d03,#ee6907,#e6390a,#de0d0d,#d61039,#cf1261,#c71585,#cf1261,#d61039, #de0d0d, #ee6907,#f79d03,#ffd700,#ffd700,#ffd700
+  );
+  filter: blur(10px);
+}
+
+.post-title {
+  font-family: SpaceGrotesk-Light;
+  color: #000000;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.post-body post-footer {
+  font-family: SpaceGrotesk-Medium;
+  max-width: 520px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+}
